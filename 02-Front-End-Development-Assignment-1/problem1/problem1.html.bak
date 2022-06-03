@@ -49,7 +49,7 @@
         </tr>
     </table>
     </div>
-	<hr/>
+
     <div class="container">
         <h1>Student scores</h1>
         <table>
@@ -78,7 +78,7 @@
             </tr>
         </table>
         </div>
-	<hr/>
+
     <div class="container">
         <h1>Hobbies</h1>
         <table>
