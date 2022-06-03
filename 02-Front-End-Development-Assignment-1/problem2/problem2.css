@@ -1,0 +1,10 @@
+.container{
+    width: 100vw;
+}
+table, th, td{
+    border: 1px solid black;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
