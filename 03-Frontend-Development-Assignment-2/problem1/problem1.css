@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+section {
+    height: 100vh;
+    height: 100vw;
+}
+.section1 {
+    /* background-color: red; */
+    background-image: url("https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    transform: translateY(100vh);
+}
+.section2 {
+    /* background-color: blue; */
+    background-image: url("https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+.section3 {
+    /* background-color: yellow; */
+    background-image: url("https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
