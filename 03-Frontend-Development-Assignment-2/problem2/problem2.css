@@ -178,7 +178,7 @@ body {
 .section4 {
     display: grid;
     width: 100%;
-    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     margin: 20px 0px;
     row-gap: 10px;
     column-gap: 10px;
@@ -244,4 +244,113 @@ body {
 }
 .img10 {
     background-image: url("./images/image8.jpg");
+}
+
+/* Responsive code */
+
+@media only screen and (max-width: 900px) {
+    .section1 .left {
+        text-align: center;
+    }
+
+    .section1 .left .content {
+        margin-left: 0px;
+    }
+    .section4 {
+        grid-template-columns: auto auto auto auto;
+    }
+    .grams {
+        grid-template-columns: auto 20% auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .section1 .left {
+        text-align: center;
+    }
+
+    .section1 .left .content {
+        margin-left: 0px;
+    }
+    .section2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+        margin: 15px 0px;
+        height: auto;
+        column-gap: 20px;
+    }
+    .section3 {
+        height: auto;
+        grid-template-columns: auto;
+        column-gap: 10px;
+    }
+    .section3 .product-image {
+        padding: 20px;
+        position: relative;
+    }
+    .section3 .product-image .taco-image {
+        height: 300px;
+    }
+    .section4 {
+        grid-template-columns: auto auto auto;
+    }
+    .grams {
+        grid-template-columns: auto 30% auto;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .header ul {
+        grid-template-columns: 50% 50%;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .header ul li {
+        font-size: 15px;
+    }
+    .section1 .left {
+        text-align: center;
+    }
+
+    .section1 .left .content {
+        margin-left: 0px;
+    }
+    .section1 {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 10px;
+        height: 500px;
+    }
+    .section1 .right {
+        padding-left: 0px;
+    }
+    .section1 .right .price {
+        font-size: 35px;
+        padding-left: 0px;
+    }
+    .section2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+        margin: 15px 0px;
+        height: auto;
+        column-gap: 20px;
+    }
+    .section3 {
+        height: auto;
+        grid-template-columns: auto;
+        column-gap: 10px;
+    }
+    .section3 .product-image {
+        padding: 20px;
+        position: relative;
+    }
+    .section3 .product-image .taco-image {
+        height: 300px;
+    }
+    .section4 {
+        grid-template-columns: auto auto;
+    }
+    .grams {
+        grid-template-columns: auto 40% auto;
+    }
 }
