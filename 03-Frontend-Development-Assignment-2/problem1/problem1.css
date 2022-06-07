@@ -3,29 +3,77 @@ body {
     padding: 0px;
 }
 .container {
-    display: flex;
-    flex-direction: column;
-}
-section {
+    position: relative;
+    width: 100vw;
     height: 100vh;
-    height: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.section1, .section2, .section3 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
 }
 .section1 {
-    /* background-color: red; */
-    background-image: url("https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg");
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    transform: translateY(100vh);
+    background-image: url('./images/image1-min.jpeg');
 }
 .section2 {
-    /* background-color: blue; */
-    background-image: url("https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg");
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
+    background-image: url('./images/image2-min.jpeg');
 }
 .section3 {
-    /* background-color: yellow; */
-    background-image: url("https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg");
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
+    background-image: url('./images/image3-min.jpeg');
 }
+.section-text-1 {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.section-text-2 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.432);
+    color: white;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+.mid-section-1, .mid-section-2 {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 250px;
+    text-align: center;
+    font-size: 18px;
+}
+.mid-section-2 {
+    background-color: black;
+    color: white;
+}
+.section-text-3 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.432);
+    color: white;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+
+
