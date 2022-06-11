@@ -13,6 +13,9 @@ body {
     /* overflow-y: hidden; */
     /* letter-spacing: 1px; */
 }
+.burger-menu {
+    display: none;
+}
 .header ul {
     padding: 0;
     margin: 0;
@@ -21,6 +24,8 @@ body {
     list-style: none;
     grid-template-columns: auto auto auto auto auto;
     column-gap: 10px;
+    transition: display 1s, opacity 2.5s linear;
+    user-select: none;
 }
 .header ul li {
     cursor: pointer;
@@ -69,6 +74,9 @@ body {
     grid-template-rows: 50% 50%;
     padding-left: 10px;
 }
+.section1 .right .price {
+    user-select: none;
+}
 .right-text-1, .right-text-2 {
     display: flex;
     flex-direction: column;
@@ -106,6 +114,7 @@ body {
     padding: 10px;
 }
 .section2 .card .card-icon i{
+    user-select: none;
     font-size: 50px;
     cursor: pointer;
 }
@@ -246,6 +255,25 @@ body {
     background-image: url("./images/image8.jpg");
 }
 
+/* Burger Menu */
+
+.burger-menu {
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+    user-select: none;
+}
+.burger-menu .bars {
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+}
+.burger-menu .bars-cancel {
+    cursor: pointer;
+    display: none;
+    font-size: 35px;
+}
+
 /* Responsive code */
 
 @media only screen and (max-width: 900px) {
@@ -299,10 +327,24 @@ body {
     }
 }
 @media only screen and (max-width: 450px) {
+    .burger-menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .burger-menu .bars {
+        display: flex;
+        font-size: 30px;
+    }
+    .burger-menu .bars-cancel {
+        display: none;
+    }
     .header ul {
-        grid-template-columns: 50% 50%;
+        /* grid-template-columns: 50% 50%; */
+        grid-template-columns: auto;
         column-gap: 10px;
         row-gap: 10px;
+        display: none;
+        /* margin-bottom: 10px; */
     }
     .header ul li {
         font-size: 15px;
