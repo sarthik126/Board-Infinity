@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+.container {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    /* justify-content: center; */
+    gap: 10px;
+    align-items: center;
+}
+.container .heading {
+    font-size: 35px;
+}
+.container .clock {
+    font-size: 80px;
+}
+.container .date {
+    font-size: 35px;
+}
+.container .btns .start, .container .btns .stop {
+    font-size: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+}
