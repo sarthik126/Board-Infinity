@@ -1,16 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./problem3.css" />
     <title>Problem 3</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        Hello
+      <div class="header">ID Card Generator</div>
+      <div class="main">
+        <div class="left">
+          <h3>Enter Student Details</h3>
+          <form onsubmit="generate(event)">
+            <label for="name">Enter Name:</label>
+            <div class="input-container">
+              <i class="fa-solid fa-user"></i>
+              <input name="name" id="name" type="text" required />
+            </div>
+
+            <label for="college">Enter College Name:</label>
+            <div class="input-container">
+              <i class="fa-solid fa-school"></i>
+              <input name="college" id="college" type="text" required />
+            </div>
+
+            <label for="location">Enter Location:</label>
+            <div class="input-container">
+              <i class="fa-solid fa-address-book"></i>
+              <input name="location" id="location" type="text" required />
+            </div>
+
+            <label for="picture">Upload students's picture:</label>
+            <div class="upload">
+              <input name="picture" id="picture" type="file" accept="image/jpeg, image/png, image/jpg" required />
+            </div>
+
+            <div class="student-image" id="student-image">
+            </div>
+
+            <input value="Generate Card" type="submit" />
+          </form>
+        </div>
+
+        <div class="right">
+            <h3 class="header-right">
+                Generated ID Card
+            </h3>
+            <div class="card">
+                <div class="card-left">
+                    <div class="card-image"></div>
+                </div>
+                <div class="card-right">
+                    <div class="nameKey">Name:<span class="nameVal">nameVal</span></div>
+                    <div class="collegeKey">College Name:<span class="collegeVal">College</span></div>
+                    <div class="locationKey">Location:<span class="locationVal">Location</span></div>
+                </div>
+            </div>
+
+        </div>
+      </div>
     </div>
     <script src="./problem3.js"></script>
-</body>
+  </body>
 </html>

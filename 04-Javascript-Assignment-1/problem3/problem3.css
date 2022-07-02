@@ -1,0 +1,155 @@
+/* Blue color shade used in sample design:- #4047F0
+Id photo background gradient:- linear-gradient(to top, #4047F0, #8f94fb) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: blue; */
+}
+.container {
+    height: 100%;
+    /* background-color: red; */
+    border-radius: 10px;
+}
+.container .header {
+    display: flex;
+    background-color: #4047F0;
+    height: 50px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+}
+.container .main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container .main .left, .container .main .right {
+    border: 1px solid rgba(110, 105, 105, 0.747);
+}
+.container .main .left {
+    /* background-color: red */
+    padding: 25px 150px;
+}
+.container .main .left h3 {
+    color: #4047F0;
+    margin-bottom: 30px;
+}
+.container .main .left label {
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.container .main .left .input-container {
+    border: 1px solid rgba(110, 105, 105, 0.747);
+    width: 250px;
+    border-radius: 5px;
+    padding: 3px 5px;
+    display: flex;
+    align-items: center;
+    background-color: #9497f565;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.container .main .left .input-container i {
+    margin: 0px 3px;
+}
+.container .main .left .input-container input {
+    margin-left: 3px;
+    padding: 3px 5px;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+.container .main .left .input-container input:focus {
+    border: none;
+}
+.container .main .left .upload {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.container .main .left .student-image {
+    height: 80px;
+    width: 80px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid rgba(110, 105, 105, 0.747);;
+}
+.container .main .left input[type="submit"] {
+    display: block;
+    margin-top: 15px;
+    background-color: #4047F0;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.container .main .right {
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .main .right .header-right {
+    /* font-size: 30px;
+    letter-spacing: 1px; */
+    margin-bottom: 20px;
+}
+.container .main .right .card {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 400px;
+    height: 200px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #1a16168f;
+}
+.container .main .right .card-left {
+    background-color: #4047F0;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .main .right .card-right {
+    border-radius: 0px 10px 10px 0px;
+}
+.container .main .right .card-left .card-image {
+    height: 90px;
+    width: 90px;
+    background-image: url("/Resources/Resources\ \(1\).jpeg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.container .main .right .card-right {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(83, 77, 77, 0.897);
+}
+.container .main .right .card-right .nameKey, .container .main .right .card-right .collegeKey {
+    margin-bottom: 20px;
+}
+.container .main .right .card-right span {
+    color: black;
+    margin-left: 8px;
+}
