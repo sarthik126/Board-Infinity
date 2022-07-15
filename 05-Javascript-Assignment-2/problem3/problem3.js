@@ -3,8 +3,13 @@ let minuteVal = 0;
 let secondVal = 0;
 
 let handle;
+let flag = 0;
 
 function startTimer(){
+
+    if(flag !== 0) return;
+
+    flag = 1;
     handle = setInterval(()=>{
 
         if( secondVal === 59 ){
@@ -24,6 +29,7 @@ function startTimer(){
 
 function stopTimer(){
     clearInterval(handle);
+    flag = 0;
 }
 
 function resetTimer(){
@@ -31,4 +37,5 @@ function resetTimer(){
     secondVal = 0;
     timeVal.innerHTML = minuteVal+":"+secondVal;
     clearInterval(handle);
+    flag = 0;
 }

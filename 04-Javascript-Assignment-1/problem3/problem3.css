@@ -70,8 +70,17 @@ body {
     border: none;
     font-size: 18px;
 }
+.container .main .left .input-container input:focus-visible {
+    border: none;
+    border-color: none;
+    outline-offset: none;
+    outline: none;
+}
 .container .main .left .input-container input:focus {
     border: none;
+    border-color: none;
+    outline-offset: none;
+    outline: none;
 }
 .container .main .left .upload {
     margin-top: 5px;
