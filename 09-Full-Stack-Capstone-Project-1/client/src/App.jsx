@@ -33,14 +33,14 @@ function App() {
   }
   
   async function deleteItem(id){
-    const res = await api.post("/grocery/deleteGroceryItem",{id:id});
+    const res = await api.delete("/grocery/deleteGroceryItem",{data:{id:id}});
     if(res.data.result === "success") {
       fetchData()
     } 
   }
 
   async function purchasedItem(id){
-    const res = await api.post("/grocery/updatePurchaseStatus",{id:id,isPurchased:true});
+    const res = await api.put("/grocery/updatePurchaseStatus",{id:id,isPurchased:true});
     if(res.data.result === "success") {
       fetchData()
     } 

@@ -33,7 +33,7 @@ app.post('/grocery/add', async (req, res) => {
   res.json({'result': 'success'});
 })
 
-app.post('/grocery/updatePurchaseStatus', async (req, res) => {
+app.put('/grocery/updatePurchaseStatus', async (req, res) => {
     let id = req.body.id;
     let isPurchased = req.body.isPurchased;
       
@@ -41,7 +41,7 @@ app.post('/grocery/updatePurchaseStatus', async (req, res) => {
     res.json({'result': 'success'});
 })
 
-app.post('/grocery/deleteGroceryItem', async (req, res) => {
+app.delete('/grocery/deleteGroceryItem', async (req, res) => {
     let id = req.body.id;
       
     let data = await deleteData(id)
