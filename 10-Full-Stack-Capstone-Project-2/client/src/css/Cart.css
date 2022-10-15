@@ -1,0 +1,28 @@
+.cart-main {
+    width: 100vw;
+}
+.cart-logo-text {
+    padding: 20px 300px;
+    display: flex;
+    justify-content: center;
+    /* font-weight: 500; */
+}
+.cart-food {
+    padding: 10px 300px;
+}
+.place-order {
+    padding: 0px 300px;
+    display: flex;
+    justify-content: center;
+}
+.place-order .btn  {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: rgb(187, 58, 58);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-self: center;
+    margin-bottom: 20px;
+}

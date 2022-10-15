@@ -1,0 +1,47 @@
+header {
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header nav {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 40, 117);
+  color: white;
+  position: relative;
+}
+header nav .logo {
+  text-decoration: none;
+  color: white;
+}
+header nav h1 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 0;
+}
+header nav .cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 25px;
+  font-weight: lighter;
+  right: 100px;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+}
+.main {
+  width: 100vw;
+  height: 90vh;
+  /* background-color: rgb(91, 140, 214); */
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}

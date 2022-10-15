@@ -1,0 +1,10 @@
+.all-foods {
+    padding: 20px 300px;
+}
+.foods-header {
+    /* font-weight: 500; */
+    padding: 0px 300px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
