@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: rgb(29, 29, 29);
+  padding: 5px 0px;
+}
+nav h1 {
+  text-align: center;
+  color: white;
+}
+.side-gap {
+  padding: 0px 100px;
+}
+.search-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+  /* align-items: center; */
+}
+.search-box input {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.search-box i {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  font-size: 20px;
+  align-self: center;
+  cursor: pointer;
+}
+.jobs {
+  margin-top: 50px;
+}
+.jobs ul {
+  list-style: none;
+}
+.card {
+  border: 2px solid black;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  width: 100%;
+}
+.job {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+}
+.job img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 4px solid blue;
+  padding: 5px;
+  cursor: pointer;
+  transition: scale 200ms ease-in;
+}
+.job img:hover {
+  scale: 1.05;
+}
+.job button {
+  margin-left: auto;
+}
+.job i {
+  font-size: 20px;
+  line-height: 0;
+  margin-left: 10px;
+}
+.details .job-role {
+  font-size: 25px;
+  font-weight: 700;
+}
+/* .card-body {
+  text-align: center;
+} */
+.desc {
+  width: 100%;
+}
+.apply {
+  display: flex;
+  justify-content: center;
+}
+.technology ul {
+  display: flex;
+  gap: 10px;
+}
+.technology .tech {
+  border: 2px solid yellowgreen;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  background-color: rgba(138, 255, 138, 0.733);
+  cursor: pointer;
+}
+.technology .tech:hover {
+  background-color: rgba(112, 211, 112, 0.63);
+}
+.upper-div, .lower-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.company-name, .role-name {
+  font-weight: 600;
+}
+.location, .salary {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+.location i{
+  padding: 0;
+  font-size: 15px;
+}
+.role-name {
+  font-weight: 500;
+}
+.deadline, .job-type {
+  margin-top: 20px;
+}
+.deadline h6, .job-type h6 {
+  margin-bottom: 3px;
+}
+.job-type .job-type-value {
+  text-transform: capitalize;
+}
+footer {
+  text-align: center;
+  margin: 20px 0px;
+}
