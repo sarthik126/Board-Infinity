@@ -1,41 +1,73 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: rgb(37, 37, 37);
+  padding: 10px 0px;
+  /* position: sticky;
+  top: 0; */
+}
+header h1 {
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.main {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+.main .register-form {
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+.main .register-form form {
+  /* margin-top: 20px; */
+}
+.main form button {
+  float: right;
+}
+.main h4 {
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+.main form input, .main form select, .main form textarea, .main form span {
+  border: 1px solid rgb(32, 32, 32);
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.main form span {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.main form label {
+  cursor: pointer;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control.error, .form-select.error {
+  color: #212529;
+  background-color: #ffff;
+  /* border-color: #86b7fe; */
+  border-color: rgba(255, 0, 0, 0.4);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.25);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.main form .form-label:after {
+  content:"*";
+  color:red;
+  margin-left: 3px;
 }
-
-.card {
-  padding: 2em;
+.message {
+  padding: 10px;
+  padding-top: 20px;
 }
-
-.read-the-docs {
-  color: #888;
+.message h6 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.message ul li {
+  font-size: 15px;
+  font-weight: 500
 }

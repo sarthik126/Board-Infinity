@@ -1,0 +1,3 @@
+export const states = ["Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttarakhand","Uttar Pradesh","West Bengal"]
+
+export const courses = ["C++ Programming Course","Python Programming Course","R Programming Course","SAS Programming Course","Java Programming Course","JavaScript Course","AngularJS Course","C Programming Course","Linux Programming Course","Node.js Course"]
